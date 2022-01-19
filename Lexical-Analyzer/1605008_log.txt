@@ -1,0 +1,163 @@
+Line no 1: TOKEN <INT> Lexeme int found
+Line no 1: TOKEN <ID> Lexeme main found
+Scope Table # 1
+0 --> < main : ID >
+
+Line no 1: TOKEN <LPAREN> Lexeme ( found
+Line no 1: TOKEN <RPAREN> Lexeme ) found
+Line no 1: TOKEN <LCURL> Lexeme { found
+Line no 2: TOKEN <INT> Lexeme int found
+Line no 2: TOKEN <ID> Lexeme a found
+Scope Table # 1
+0 --> < main : ID >
+3 --> < a : ID >
+
+Line no 2: TOKEN <COMMA> Lexeme , found
+Line no 2: TOKEN <ID> Lexeme b found
+Scope Table # 1
+0 --> < main : ID >
+3 --> < a : ID >
+4 --> < b : ID >
+
+Line no 2: TOKEN <SEMICOLON> Lexeme ; found
+Line no 3: TOKEN <ID> Lexeme a found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+3 --> < a : ID >
+4 --> < b : ID >
+
+Line no 3: TOKEN <ASSIGNOP> Lexeme = found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >
+4 --> < b : ID >
+
+Line no 3: TOKEN <ID> Lexeme a found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >
+4 --> < b : ID >
+
+Line no 3: TOKEN <ADDOP> Lexeme + found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >
+4 --> < b : ID >
+5 --> < + : ADDOP >
+
+Line no 3: TOKEN <CONST_INT> Lexeme 1 found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 3: TOKEN <SEMICOLON> Lexeme ; found
+Line no 4: TOKEN <CHAR> Lexeme char found
+Line no 4: TOKEN <ID> Lexeme ch found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 4: TOKEN <ASSIGNOP> Lexeme = found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 4: TOKEN <CONST_CHAR> Lexeme 'a' found
+
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 4: TOKEN <SEMICOLON> Lexeme ; found
+Line no 5: TOKEN <ID> Lexeme ch found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 5: TOKEN <ASSIGNOP> Lexeme = found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+
+Line no 5: TOKEN <CONST_CHAR> Lexeme '\t' found
+
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >
+6 --> < '\t' : CONST_CHAR >
+
+Line no 5: TOKEN <SEMICOLON> Lexeme ; found
+Line no 6: TOKEN <CHAR> Lexeme char found
+Line no 6: TOKEN <ID> Lexeme c found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >< c : ID >
+6 --> < '\t' : CONST_CHAR >
+
+Line no 6: TOKEN <LTHIRD> Lexeme [ found
+Line no 6: TOKEN <RTHIRD> Lexeme ] found
+Line no 6: TOKEN <ASSIGNOP> Lexeme = found
+Symbol already exist in the Symbol Table
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >
+5 --> < + : ADDOP >< c : ID >
+6 --> < '\t' : CONST_CHAR >
+
+Line No. 6: Token <STRING> Lexeme "ab\td" found
+Line no 6: TOKEN <SEMICOLON> Lexeme ; found
+Line no 7: TOKEN <ID> Lexeme printf found
+Scope Table # 1
+0 --> < main : ID >
+2 --> < = : ASSIGNOP >
+3 --> < a : ID >< ch : ID >< 'a' : CONST_CHAR >
+4 --> < b : ID >< 1 : CONST_INT >< printf : ID >
+5 --> < + : ADDOP >< c : ID >
+6 --> < '\t' : CONST_CHAR >
+
+Line no 7: TOKEN <LPAREN> Lexeme ( found
+Line No. 7: Token <STRING> Lexeme "abc\rtyy\
+def\
+ghi" found
+Line no 9: TOKEN <RPAREN> Lexeme ) found
+Line no 9: TOKEN <SEMICOLON> Lexeme ; found
+Line no 10: TOKEN <COMMENT> Lexeme // a comment\
+hflklh
+ found
+
+Line no 12: Unterminated comment found
+
